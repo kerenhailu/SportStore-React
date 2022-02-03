@@ -9,22 +9,15 @@ import Shoes from "./Components/Shoes/Shoes.Component";
 import SportsEquipment from "./Components/SportsEquipment/SportsEquipment.Component";
 
 function App() {
-
   return (
     <div className="App">
       <h1>App : </h1>
-      <ContextShoes>
-      <Shoes/>
-      </ContextShoes>
-      <ContextPants>
-        <Pants/>
-      </ContextPants>
-      <ContextShirt>
-        <Shirt/>
-      </ContextShirt>
-      <SportsEquipmentContext>
+      {/* <Pants /> */}
+      <Shoes />
+      {/* <Shirt /> */}
+      {/* <SportsEquipmentContext>
         <SportsEquipment/>
-      </SportsEquipmentContext>
+      </SportsEquipmentContext> */}
     </div>
   );
 }

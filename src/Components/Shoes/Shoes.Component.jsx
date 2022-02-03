@@ -1,16 +1,12 @@
-import React ,{ useContext } from "react";
-import { CreateContextProvider } from "../Context/ContextShoes.Component";
+import ContextShoes from "../Context/ContextShoes.Component";
+import ShoesCards from "./Cards/ShoesCards.Component";
 
 const Shoes=()=>{
-    const {shoes, setShoes} = useContext(CreateContextProvider);
-
 return(<div>
-{/* <button onClick={GetShoes}>show shoes</button> */}
-      <section>
-        {shoes.map((item) => 
-          <p>Company :{item.Company} </p>
-        )}
-      </section>
+      <ContextShoes>
+          <h1>Shoes:</h1>
+          <ShoesCards/>
+      </ContextShoes>
 </div>)
 }
 export default Shoes;
