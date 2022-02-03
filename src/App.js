@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ContextPants from "./Components/Context/ContextPants.Component";
+import ContextShirt from "./Components/Context/ContextShirt.Component";
+import ContextShoes from "./Components/Context/ContextShoes.Component";
+import SportsEquipmentContext from "./Components/Context/SportsEquipmentContext.Component";
+import Pants from "./Components/Pants/Pants.Component";
+import Shirt from "./Components/Shirt/Shirt.Component";
+import Shoes from "./Components/Shoes/Shoes.Component";
+import SportsEquipment from "./Components/SportsEquipment/SportsEquipment.Component";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>App : </h1>
+      <ContextShoes>
+      <Shoes/>
+      </ContextShoes>
+      <ContextPants>
+        <Pants/>
+      </ContextPants>
+      <ContextShirt>
+        <Shirt/>
+      </ContextShirt>
+      <SportsEquipmentContext>
+        <SportsEquipment/>
+      </SportsEquipmentContext>
     </div>
   );
 }
