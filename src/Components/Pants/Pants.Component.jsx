@@ -4,7 +4,7 @@ import  ContextProviderPants  from "../Context/ContextPants.Component";
 const Pants = () => {
   return (
     <ContextProviderPants>
-      <div>
+      <div className="Main">
       <p>Pants :</p> 
     </div>
     </ContextProviderPants> 

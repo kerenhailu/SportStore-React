@@ -32,7 +32,7 @@ function ShoesCard({ ShoesItem }) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="Card" sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

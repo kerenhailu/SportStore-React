@@ -7,7 +7,7 @@ import CardsShirt from "./Cards/CardsShirt.Component";
 const Shirt = () => {
   return (
     <ContextShirt>
-      <div>
+      <div className="Main">
         <p>shirt :</p>
         <CardsShirt />
       </div>
