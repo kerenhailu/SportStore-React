@@ -22,6 +22,8 @@
 .Main {
   grid-area: main;
   background-color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
 }
 
 .Haeder {
